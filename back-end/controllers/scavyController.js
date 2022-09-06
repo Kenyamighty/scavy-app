@@ -6,11 +6,13 @@ const { getAllScavydex } = require("../queries/scavydex");
 scavydex.get("/", async (req, res) => {
      const allScavydex = await getAllScavydex();
      if (allScavydex[0]) {
-          res.status(200).json(allScavydex(``))
+       res.status(200).json(allScavydex);
      } else {
-          res.status(500).json({ error: "server error"});
+       res.status(500).json({ error: "server error" });
      }
-});
+   });
+
+   
 
 module.exports = scavydex;
 
