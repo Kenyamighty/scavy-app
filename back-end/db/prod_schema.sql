@@ -1,7 +1,4 @@
-DROP DATABASE IF EXISTS scavy_dev;
-CREATE DATABASE scavy_dev;
 
-\c scavy_dev;
 
 CREATE TABLE scavy (
      id SERIAL PRIMARY KEY,
